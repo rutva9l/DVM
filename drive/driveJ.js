@@ -44,12 +44,12 @@ Prev.addEventListener("click",function(){
   Slide.style.transform="translateX("+(-size*i)+"px)";
 });
 Slide.addEventListener("transitionend",function(){
-  console.log("fired");
-  if(Images[i].id==="first"){
+  if(Images[i].id==="arreyaar"){
+    console.log("fired");
     Slide.style.transition="none";
     i=2;
   }
-  else if(Images[i].id==="last"){
+  if(Images[i].id==="last"){
     Slide.style.transition="none";
     i=5;
   }
@@ -70,7 +70,7 @@ Prevv.addEventListener("click",function(){
 });
 Slide1.addEventListener("transitionend",function(){
   console.log("fired");
-  if(j==5){
+  if(j==6){
     Slide1.style.transform="translateX("+(size1*(j-5))+"px)";
     Slide1.style.transform="translateX(0)";
     j=1;
